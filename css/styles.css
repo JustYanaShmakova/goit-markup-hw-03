@@ -18,6 +18,25 @@ body {
     background-color: white;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+cursor: pointer;
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -33,6 +52,8 @@ body {
 
 .header {
     border: 1px solid var(--cornflower-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav {
@@ -126,6 +147,14 @@ body {
     background-color: var(--navy-blue-color);
 }
 
+.container-hero {
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center
+}
+
 .hero-title {
     color: var(--white-color);
     font-size: 56px;
@@ -143,7 +172,10 @@ body {
     background-color: var(--iris-color);
     align-items: center;
     letter-spacing: 0.04em;
-    cursor: pointer;
+    width: 169px;
+    height: 56px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .hero-btn:hover,
