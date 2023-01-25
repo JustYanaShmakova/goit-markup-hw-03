@@ -15,7 +15,7 @@ body {
     color: var(--navy-blue-color);
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -140,7 +140,6 @@ color: var(--ocean-color);
 .footer {
     background-color: var(--navy-blue-color);
     padding-top: 100px;
-    margin-top: 120px;
 }
 
 .footer-text-logo {
@@ -289,8 +288,6 @@ color: var(--ocean-color);
 /* For portfolio */
 
 .filter {
-    margin-right: auto;
-    margin-left: auto;
     display: flex; 
     padding-top: 96px;
     padding-bottom: 72px;
@@ -301,10 +298,15 @@ color: var(--ocean-color);
     gap: 24px;
 }
 
-.typical:not(:last-child) {
-    margin-bottom: 48px;
+.container-text {
+    background-color: var(--white-color);
+    border: 1px solid var(--cornflower-color);
+    width: 360px;  
 }
 
+.last {
+    margin-bottom: 120px;
+}
 
 .portfolio-hero {
 }
@@ -318,6 +320,10 @@ color: var(--ocean-color);
     margin-right: auto;
     margin-left: auto;
     flex-wrap: wrap;
+    gap: 48px;
+}
+
+.select {
     gap: 24px;
 }
 
@@ -350,11 +356,6 @@ color: var(--ocean-color);
 .portfolio-hero-item {
     flex-basis: calc((100% - 48px) / 3);
     flex-wrap: wrap;
-    border: 1px solid var(--cornflower-color)
-}
-
-.portfolio-hero-item: not(:last-child) {
-    margin-bottom: 48px;  
 }
 
 .projects-img {
