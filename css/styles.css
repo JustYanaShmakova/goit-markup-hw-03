@@ -110,6 +110,10 @@ cursor: pointer;
     color: var(--ocean-color);  
 }
 
+.nav-link.current {
+color: var(--ocean-color);
+}
+
 .address-link:hover,
 .address-link:focus {
     color: var(--ocean-color);   
@@ -136,6 +140,7 @@ cursor: pointer;
 .footer {
     background-color: var(--navy-blue-color);
     padding-top: 100px;
+    margin-top: 120px;
 }
 
 .footer-text-logo {
@@ -283,6 +288,24 @@ cursor: pointer;
 
 /* For portfolio */
 
+.filter {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex; 
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+
+.typical {
+    display: flex;
+    gap: 24px;
+}
+
+.typical:not(:last-child) {
+    margin-bottom: 48px;
+}
+
+
 .portfolio-hero {
 }
 
@@ -291,9 +314,11 @@ cursor: pointer;
 
 .portfolio-hero-list { 
     list-style-type: none;
-}
-
-.portfolio-hero-item {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .portfolio-hero-btn {
@@ -310,6 +335,7 @@ cursor: pointer;
     border: 1px solid var(--cornflower-color);
     border-radius: 4px;
     cursor: pointer;
+    padding: 12px 24px;
 }
 
 .portfolio-hero-btn:hover, 
@@ -321,9 +347,14 @@ cursor: pointer;
 .projects {
 }
 
-
 .portfolio-hero-item {
-    border: 1px solid var(--cornflower-color);
+    flex-basis: calc((100% - 48px) / 3);
+    flex-wrap: wrap;
+    border: 1px solid var(--cornflower-color)
+}
+
+.portfolio-hero-item: not(:last-child) {
+    margin-bottom: 48px;  
 }
 
 .projects-img {
@@ -334,10 +365,15 @@ cursor: pointer;
     font-size: 20px;
     line-height: var(--typical-lh);
     letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    padding-left: 16px;
 }
 
 .portfolio-hero-text {
     line-height: var(--typical-lh);
     letter-spacing: 0.02em;
     color: var(--slate-color);
+    padding-bottom: 32px;
+    padding-left: 16px;
 }
