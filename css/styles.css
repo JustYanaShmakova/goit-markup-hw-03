@@ -37,8 +37,8 @@ cursor: pointer;
 
 .container {
     width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 156px;
+    margin-right: 156px;
 }
 
 .visually-hidden {
@@ -172,11 +172,14 @@ color: var(--ocean-color);
     background-color: var(--navy-blue-color);
 }
 
-.first {
+.container-first {
+    width: 1158px;
     padding-top: 188px;
     padding-bottom: 157px;
     text-align: center;
     max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title {
